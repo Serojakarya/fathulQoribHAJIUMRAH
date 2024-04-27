@@ -1,0 +1,586 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/j.js" type="text/javascript">
+	</script><script src="js/s.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+
+
+
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 17px;
+    padding: 8px 3px 8px 3px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+	position: fixed;
+	top: -1px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+	color: #F6B02E;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #F6B02E;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 17px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+	
+	
+	phr {
+		color:#918e8f;
+		font-size:17px;
+		
+	}
+
+	pnt {
+		color:black;
+		font-size:14px;
+		font-style: italic;
+	}
+	
+	
+
+
+</style>
+
+<style>
+
+
+.bottom-nav {
+   
+    padding: 10px;
+    background-color: #0A3158;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+	margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+
+}
+
+.bottom-link-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottom-nav a {
+    color: #F6B02E;
+    cursor: pointer;
+}
+
+.bottom-nav a svg {
+    width: 20px;
+}
+
+.bottom-nav a:nth-child(3) {
+    transform: scale(1.5) translateY(-10px);
+    background-color: #0A3158;
+    border-radius: 1000px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F6B02E;
+    color: #F6B02E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+    .bottom-nav {
+        width: 100%;
+        bottom: 0%;
+        left: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-transform: translate(-50%,0%);
+           -moz-transform: translate(-50%,0%);
+            -ms-transform: translate(-50%,0%);
+             -o-transform: translate(-50%,0%);
+                transform: translate(-50%,0%);
+    }
+
+    .bottom-link-nav {
+        position: relative;
+        width: 450px;
+    }
+
+}
+</style>
+
+<style>
+    @font-face{;
+        font-family:"me_quran";
+        src:url("css/fonts/me_quran.ttf")
+    }
+    
+	 @font-face{;
+        font-family:"LPMQ_IsepMisbah";
+        src:url("LPMQ_IsepMisbah.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"Traditional Arabic";
+        src:url("font.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"KFGQPC Uthman Taha Naskh Bold";
+        src:url("fonts.ttf")
+    }
+	
+	
+    .arab{font-family:me_quran; }
+    </style> 
+<body>
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="eps1" data-theme="d">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="c">
+		</div><div data-role="content"><div id="t">
+		
+
+
+
+<div id="mnj" style="display: block; position: right;">
+<ul id="tejaul">
+    <li><a href="1.html">Kitab Hukum Haji dan Umrah</a></li>
+    <li><a href="2.html">Kewajiban saat Haji</a></li>
+    <li><a href="3.html">Yang Haram saat Ihram</a></li>
+	<li><a href="4.html">Denda yang Wajib saat Ihrom</a></li>
+
+</ul>
+
+</div>
+
+
+<h1>Ahkam Muharromat<br/> Al-Ihram</h1><br/><br/>
+
+
+
+	
+
+<div align="center">
+	<hr size="2" width="100%" align="center"/>
+</div>
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+
+
+فصل: في أحكام محرمات الإحرام وهي ما يحرم بسبب الإحرام (ويحرم على المحرم عشرة أشياء)
+<br/><br/>
+أحدها (لبس المخيط) كقميص وقباء وخف، ولبس المنسوج كدرع أو المعقود كلبد في جميع بدنه (و) الثاني (تغطية الرأس) أو بعضها (من الرجل) بما يعد ساتراً كعمامة وطين، فإن لم يعد ساتراً لم يضر كوضع يده على بعض رأسه وكانغماسه في ماء واستظلاله بمحمل، وإن مس رأسه
+<br/><br/>
+و- تغطية (الوجه) أو بعضه (من المرأة) بما يعد ساتراً ويجب عليها أن تستر من وجهها ما لا يتأتى ستر جميع الرأس إلا به، ولها أن تسبل على وجهها ثوباً متجافياً عنه بخشبة ونحوها، والخنثى كما قال القاضي أبو الطيب يؤمر بالستر، ولبس المخيط، وأما الفدية فالذي عليه الجمهور، أنه إن ستر وجهه أو رأسه، لم تجب الفدية للشك وإن سترهما وجبت (و) الثالث (ترجيل) أي تسريح (الشعر) كذا عده المصنف من المحرمات لكن الذي في شرح المهذب أنه مكروه، وكذا حك الشعر بالظفر
+<br/><br/>
+و- الرابع (حلقه) أي الشعر أو نتفه أو إحراقه والمراد إزالته بأي طريق كان ولو ناسياً
+<br/><br/>
+و- الخامس (تقليم الأظفار) أي إزالتها من يد أو رجل بتقليم أو غيره إلا إذا انكسر بعض ظفر المحرم وتأذى به فله إزالة المنكسر فقط
+<br/><br/>
+و- السادس (الطيب) أي استعماله قصداً بما يقصد منه رائحة الطيب نحو مسك وكافور في ثوبه بأن يلصقه به على الوجه المعتاد في استعماله أو في بدنه ظاهره أو باطنه، كأكله الطيب، ولا فرق في مستعمل الطيب بين كونه رجلاً أو امرأة أخشم كان أو لا وخرج بقصد أما لو ألقت عليه الريح طيباً، أو أكره على استعماله أو جهل تحريمه، أو نسي أنه محرم، فإنه لا فدية عليه، فإن علم تحريمه وجهل الفدية وجبت
+<br/><br/>
+و- السابع (قتل الصيد) البري المأكول أو ما في أصله مأكول من وحش وطير ويحرم أيضاً صيده، ووضع اليد عليه والتعرض لجزئه وشعره وريشه (و) الثامن (عقد النكاح) فيحرم على المحرم أن يعقد النكاح لنفسه أو غيره بوكالة أو ولاية (و) التاسع (الوطء) من عاقل عالم بالتحريم سواء جامع في حج أو عمرة في قبل أو دبر من ذكر أو أنثى زوجة أو مملوكة أو أجنبية
+<br/><br/>
+و- العاشر (المباشرة) فيما دون الفرج كلمس وقبلة (بشهوة) أما بغير شهوة فلا يحرم (وفي جميع ذلك) أي المحرمات السابقة (الفدية) وسيأتي بيانها. والجماع المذكور تفسد به العمرة المفردة أما التي في ضمن حج في قران، فهي تابعة له صحة وفساداً وأما الجماع، فيفسد الحج قبل التحلل الأول بعد الوقوف أو قبله، أما بعد التحلل الأول فلا يفسد (إلا عقد النكاح) فإنه لا ينعقد (ولا يفسده إلا الوطء في الفرج) بخلاف المباشرة في غير الفرج فإنها لا تفسده (ولا يخرج) المحرم (منه بالفساد) بل يجب عليه المضي في فاسده وسقط في بعض النسخ قوله في فاسده، أي النسك من حج أو عمرة بأن يأتي ببقية أعماله (ومن) أي والحاج الذي (فاته الوقوف بعرفة) بعذر أو غيره (تحلل) حتماً (بعمل عمرة) فيأتي بطواف وسعي إن لم يكن سعى بعد طواف القدوم، وعليه أي الذي فاته الوقوف (القضاء) فوراً فرضاً كان نسكه أو نفلاً، وإنما يجب القضاء في فوات لم ينشأ عنه حصر، فإن أحصر شخص، وكان له طريق غير التي وقع الحصر فيها لزمه سلوكها، وإن علم الفوات، فإن مات لم يقض عنه في الأصح (و) عليه مع القضاء (الهدي) ويوجد في بعض النسخ زيادة وهي (
+<br/><br/>
+ومن ترك ركناً) مما يتوقف عليه الحج (لم يحل من إحرامه حتى يأتي به) ولا يجبر ذلك الركن بدم (ومن ترك واجباً) من واجبات الحج (لزمه الدم) وسيأتي بيان الدم (ومن ترك سنة) من سنن الحج (لم يلزمه بتركها شيء) وظهر من كلام المتن الفرق بين الركن والواجب والسنة.
+</font></div>
+
+<hr/><br/>
+
+
+
+<b><center>Hal-Hal Yang Diharamkan Saat Ihram</b></center>
+
+<p>(Pasal) menjelaskan hukum-hukum muharramatul ihram (hal-hal yang diharamkan saat ihram).</p>
+
+<p>Muharramatul ihram adalah hal-hal yang haram sebab ihram.</p>
+
+<p>Ada sepuluh perkara yang diharamkan bagi orang yang sedang melaksanakan ihram.</p>
+
+<p>Salah satunya adalah mengenakan pakaian yang berjahit seperti ghamis, juba dan muza. Mengenakan pakaian yang ditenun seperti baju jira. Atau pakaian yang digelung seperti pakaian yang digelungkan ke seluruh badan.</p>
+
+<p>Yang ke dua adalah menutup kepala atau sebagiannya bagi orang laki-laki dengan menggunakan sesuatu yang dianggap sebagai penutup -secara ‘urf-seperti surban dan tanah liat.</p>
+
+<p>Jika yang digunakan tidak dianggap sebagai penutup, maka tidak masalah seperti meletakkan tangan di atas sebagian kepalanya. Dan seperti berendam di dalam air, dan berteduh di bawah tandu yang berada di atas onta, walaupun sampai menyentuh kepalanya.</p>
+
+<p>Dan menutup wajah atau sebagiannya bagi orang wanita dengan menggunakan sesuatu yang dianggap penutup.</p>
+
+<p>Bagi seorang wanita wajib menutup bagian wajah yang tidak mungkin baginya untuk menutup kepala kecuali dengan menutup bagian wajah tersebut.</p>
+
+<p>Bagi seorang wanita diperkenankan untuk mengenakan cadar yang direnggangkan -tidak sampai menyentuh- dari wajah dengan menggunakan kayu dan sesamanya.</p>
+
+<p>Seorang khuntsa, sebagaimana keterangan yang disampaikan oleh Qadli Abu Thayyib, diperintah agar menutup kepalanya, dan diperkenankan untuk mengenakan pakaian berjahit.</p>
+
+<p>Adapun masalah fidyahnya, maka menurut pendapat jumhur (mayoritas ulama’) bahwa sesungguhnya seorang khuntsa jika menutup wajah atau kepalanya, maka tidak wajib fidyah karena masih ada keraguan. Namun jika menutup keduanya, maka wajib fidyah.</p>
+
+<p>Yang ke tiga adalah menyisir rambut.</p>
+
+<p>Begitulah mushannif memasukkan hal tersebut termasuk dari hal-hal yang diharamkan.</p>
+
+<p>Akan tetapi keterangan di dalam kitab Syarh al Muhadzdzab menyatakan bahwa sesungguhnya menyisir rambut hukumnya makruh, begitu juga menggaruk rambut dengan kuku.</p>
+
+<p>Yang ke empat adalah mencukur rambut, mencabut atau membakarnya.</p>
+
+<p>Yang dikehendaki adalah menghilangkan rambut dengan cara apapun, walaupun ia dalam keadaan lupa.</p>
+
+<p>Yang ke lima adalah memotong kuku, maksudnya menghilangkannya, baik kuku tangan atau kaki dengan dipotong atau yang lainnya.</p>
+
+<p>Kecuali ketika sebagian kuku orang yang sedang ihram pecah dan ia merasa kesakitan dengan hal tersebut, maka baginya diperbolehkan untuk menghilangkan bagian kuku yang pecah saja.</p>
+
+<p>Yang ke enam adalah wangi-wangian, maksudnya menggunakan wewangian secara sengaja dengan sesuatu yang memang ditujukan untuk menghasilkan bauh wangi seperti misik dan kapur barus.</p>
+
+<p>-menggunakan- di pakaian dengan cara menemukan wewangian tersebut pada pakaian dengan cara yang telah terbiasa di dalam penggunaannya. Dan -menggunakan- di badan, bagian luar atau dalam seperti ia memakan wangi-wangian.</p>
+
+<p>Tidak ada perbedaan pada orang yang menggunakan wewangian tersebut, antara orang laki-laki atau perempuan, orang akhsyam (indra pembaunya tidak berfungsi) atau tidak.</p>
+
+<p>Dengan ungkapan “secara sengaja” mengecualikan jika hembusan angin membawa wewangian yang mengenai dirinya, atau ia dipaksa untuk menggunakannya, tidak tahu akan keharamannya, atau lupa bahwa sesungguhnya ia sedang melaksanakan ihram, maka sesungguhnya tidak ada kewajiban fidyah bagi dia.</p>
+
+<p>Jika ia tahu akan keharamannya dan tidak tahu akan kewajiban fidyahnya, maka tetap wajib membayar fidyah.</p>
+
+<p>Yang ke tujuh adalah membunuh binatang buruan yang hidup di darat dan halal dimakan, atau induknya ada yang halal dimakan seperti binatang liar dan burung.</p>
+
+<p>Dan juga haram memburunya, menguasainya, dan mengganggu bagian badan, bulu halus dan bulu kasarnya.</p>
+
+<p>Yang ke delapan adalah akad nikah.</p>
+
+<p>Maka bagi orang yang sedang ihram, haram melakukan akad nikah untuk dirinya sendiri atau orang lain dengan cara wakil atau menjadi wali.</p>
+
+<p>Yang ke sembilan adalah wathi yang dilakukan oleh orang yang berakal dan mengetahui keharamannya, baik melakukan jima’ saat ihram haji atau umrah, di jalan depan atau belakang, dengan laki-laki atau perempuan, istri, budak perempuan yang di miliki atau dengan wanita lain.</p>
+
+<p>Yang ke sepuluh adalah bersentuhan kulit selain bagian farji seperti menyentuh atau mencium dengan birahi.</p>
+
+<p>Adapun bersentuhan kulit tidak dengan birahi, maka hukumnya tidak haram.</p>
+
+<p>Di dalam semua hal tersebut, maksudnya hal-hal yang diharamkan yang telah disebutkan, wajib membayar fidyah, dan akan dijelaskan di belakang.</p><br/>
+
+<b><center>Hal-Hal Yang Merusak Ihram</b></center>
+
+<p>Jima’ yang telah dijelaskan di atas bisa merusak ibadah umrah yang disendirikan.</p>
+
+<p>Adapun umrah yang berada di dalam kandungan haji Qiran, maka hukumnya mengikuti haji, baik sah atau rusaknya.</p>
+
+<p>Adapun jima’ bisa merusak haji ketika dilakukan sebelum tahallul awal, baik setelah wukuf atau sebelumnya.</p>
+
+<p>Sedangkan jima’ yang dilakukan setelah tahallul awal, maka tidak sampai merusak status haji.</p>
+
+<p>-kewajiban fidyah di atas tersebut adalah- kecuali akad nikah, karena sesungguhnya akad nikah yang dilakukan tidak sah.<sup>1</sup></p>
+
+<p>Haji tidak bisa rusak kecuali dengan wathi di bagian farji.</p>
+
+<p>Berbeda dengan bersentuhan pada bagian selain farji, maka sesungguhnya hal tersebut tidak sampai merusak status haji.</p>
+
+<p>Orang yang ihram tidak diperkenankan keluar dari ihramnya sebab telah rusak, bahkan baginya wajib untuk meneruskan amaliyah ihramnya yang telah berstatus rusak.</p>
+
+<p>Di dalam sebagian redaksi, tidak dicantumkan ungkapan mushannif “di dalam ihramnya yang rusak” maksudnya ibadah haji atau umrah dengan cara melaksanakan amaliyah-amaliyah yag masih tersisa.</p><br/>
+
+<b><center></i>Ketinggalan Wukuf di Arafah</i></b></center>
+
+<p>Barang siapa melaksanakan ihram haji dan ketinggalan wukuf di Arafah sebab udzur atau tidak, maka wajib tahallul dengan melaksanakan amaliyah umrah.</p>
+
+<p>Maka ia melakukan thawaf dan sa’i jika memang belum sa’i setelah thawaf Qudum.</p>
+
+<p>Dan bagi dia, maksudnya orang yang ketinggalan wukuf di Arafah, wajib segera mengqadla’, baik hajinya fardlu atau sunnah.</p>
+
+<p>Qadla’ hanya wajib dilakukan di dalam permasalahan ketinggalan wukuf yang tidak disebabkan oleh hashr (tercegah).</p>
+
+<p>Jika seseorag tercegah untuk melakukan perjalanan, namun ia masih bisa melewati jalan selain jalan yang terjadi pencegahan, maka wajib baginya untuk melewati jalan tersebut, walaupun tahu bahwa dia tetap akan ketinggalan wukuf.</p>
+
+<p>Jika ia meninggal dunia, maka tidak wajib diqadla’i menurut pendapat ashah.</p>
+
+<p>Bagi dia -orang yang ketinggalan wukuf- di samping mengqadla’, juga wajib membayar hadyah.</p><br/>
+
+<b><center></i>Meninggalkan Rukun, Kewajiban dan Kesunahan Ihram</i></b></center>
+
+<p>Di dalam sebagian redaksi telah ditemukan keterangan tambahan.</p>
+
+<p>Yaitu, barang siapa meninggalkan rukun-rukun yang menjadi penentu sahnya haji, maka dia tidak bisa berstatus halal / lepas dari ihramnya sehingga ia melaksanakan rukun tersebut.</p><br/>
+
+<b><center></i>Rukun tersebut tidak bisa digantikan dengan dam.</i></b></center>
+
+<p>Barang siapa meninggalkan kewajiban dari kewajiban-kewajiban haji, maka wajib membayar dam. Dan dam akan dijelaskan di belakang.</p>
+
+<p>Barang siapa meninggalkan kesunahan dari kesunahan-kesunahan haji, maka dia tidak berkewajiban apa-apa sebab meninggalkan kesunahan tersebut.</p>
+
+<p>Dari ungkapan matan, telah jelas perbedaan antara rukun, wajib, dan sunnah.</p>
+</p>
+
+
+
+
+<b><u>Catatan:</u></b><br/>
+<phr>
+<p><sub>1</sub>Tahallul Awwal adalah perbuatan yang mengakibatkan diperbolehkannya melakukan semua larangan ihram
+kecuali nikah dan mubasyarah (bersentuhan lain jenis dengan syahwat) yakni dengan mengerjakan dua
+diantara tiga perbuatan, berupa melempar jumrah tanggal 10 Dzulhijjah, mencukur rambut paling sedikit
+tiga helai, thawaf ifadlah. Lihat Busyro Al-Karim, hal. 104.<br/><br/>
+Tahallul Tsani ialah melakukan satu perbuatan lagi diantara tiga perbuatan yang dilakukan, maka ia bebas
+dari semua larangan ihram. Lihat Busyro Al-Karim, hal. 104.</p>
+
+
+
+</phr>
+
+
+<br/>
+
+  <div class="bottom-nav">
+    <div class="bottom-link-nav"> 
+    <a href="../index.html">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+    </a>
+
+    <a href="2.html">
+	<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M18,11V13H10L13.5,16.5L12.08,17.92L6.16,12L12.08,6.08L13.5,7.5L10,11H18M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12Z" /></svg>
+    </a>
+	
+    <a href="">
+    <font size="2" > 3</font>
+	</a>
+	
+	<a href="4.html">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" /></svg>
+    </a>
+	
+    <a href="#" id="tmnj">
+     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+    </a>
+	
+
+    </div>
+
+
+</body>
+</html>

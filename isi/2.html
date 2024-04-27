@@ -1,0 +1,603 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/j.js" type="text/javascript">
+	</script><script src="js/s.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+
+
+
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 17px;
+    padding: 8px 3px 8px 3px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+	position: fixed;
+	top: -1px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+	color: #F6B02E;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #F6B02E;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 17px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+	
+	
+	phr {
+		color:#918e8f;
+		font-size:17px;
+		
+	}
+
+	pnt {
+		color:black;
+		font-size:14px;
+		font-style: italic;
+	}
+	
+	
+
+
+</style>
+
+<style>
+
+
+.bottom-nav {
+   
+    padding: 10px;
+    background-color: #0A3158;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+	margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+
+}
+
+.bottom-link-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottom-nav a {
+    color: #F6B02E;
+    cursor: pointer;
+}
+
+.bottom-nav a svg {
+    width: 20px;
+}
+
+.bottom-nav a:nth-child(3) {
+    transform: scale(1.5) translateY(-10px);
+    background-color: #0A3158;
+    border-radius: 1000px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F6B02E;
+    color: #F6B02E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+    .bottom-nav {
+        width: 100%;
+        bottom: 0%;
+        left: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-transform: translate(-50%,0%);
+           -moz-transform: translate(-50%,0%);
+            -ms-transform: translate(-50%,0%);
+             -o-transform: translate(-50%,0%);
+                transform: translate(-50%,0%);
+    }
+
+    .bottom-link-nav {
+        position: relative;
+        width: 450px;
+    }
+
+}
+</style>
+
+<style>
+    @font-face{;
+        font-family:"me_quran";
+        src:url("css/fonts/me_quran.ttf")
+    }
+    
+	 @font-face{;
+        font-family:"LPMQ_IsepMisbah";
+        src:url("LPMQ_IsepMisbah.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"Traditional Arabic";
+        src:url("font.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"KFGQPC Uthman Taha Naskh Bold";
+        src:url("fonts.ttf")
+    }
+	
+	
+    .arab{font-family:me_quran; }
+    </style> 
+<body>
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="eps1" data-theme="d">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="c">
+		</div><div data-role="content"><div id="t">
+		
+
+
+
+<div id="mnj" style="display: block; position: right;">
+<ul id="tejaul">
+    <li><a href="1.html">Kitab Hukum Haji dan Umrah</a></li>
+    <li><a href="2.html">Kewajiban saat Haji</a></li>
+    <li><a href="3.html">Yang Haram saat Ihram</a></li>
+	<li><a href="4.html">Denda yang Wajib saat Ihrom</a></li>
+
+</ul>
+
+</div>
+
+
+<h1>Kewajiban Haji Ada Tiga <br/>(Selain Rukun)</h1><br/><br/>
+
+
+
+
+
+	
+
+<div align="center">
+	<hr size="2" width="100%" align="center"/>
+</div>
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+
+
+
+وواجبات الحج غير الأركان ثلاثة أشياء-
+<br/><br/>
+أحدها (الإحرام من الميقات) الصادق بالزماني والمكاني، فالزماني بالنسبة للحج شوال وذو القعدة وعشر ليال من ذي الحجة، وأما بالنسبة للعمرة، فجميع السنة وقت لإحرامه والميقات المكاني للحج في حق المقيم بمكة نفس مكة مكياً كان أو آفاقياً، وأما غير المقيم بمكة فميقات المتوجه من المدينة الشريفة ذو الحليفة والمتوجه من الشام ومصر والمغرب الجحفة، والمتوجه من تهامة اليمن يلملم، والمتوجه من نجد الحجاز ونجد، اليمن قرن والمتوجه من المشرق ذات عرق
+<br/><br/>
+و- الثاني من واجبات الحج (رمي الجمار الثلاث) يبدأ بالكبرى ثم الوسطى، ثم جمرة العقبة ويرمي كل جمرة بسبع حصيات واحدة بعد واحدة، فلو رمى حصاتين دفعة حسبت واحدة، ولو رمى حصاة واحدة سبع مرات كفى، ويشترط كون المرمى به حجراً، فلا يكفي غيره كلؤلؤ وجص (و) الثالث (الحلق) أو التقصير والأفضل للرجل الحلق وللمرأة التقصير، وأقل الحلق إزالة ثلاث شعرات من الرأس حلقاً أو تقصيراً أو نتفاً أو إحراقاً أو قصاً، ومن لا شعر برأسه يسن له إمراراً لموسى عليه، ولا يقوم شعر غير الرأس من اللحية، وغيرها مقام شعر الرأس
+<br/><br/>
+وسنن الحج سبع- أحدها (الإفراد وهو تقديم الحج على العمرة) بأن يحرم أولاً بالحج من ميقاته يفرغ منه ثم يخرج من مكة إلى أدنى الحل، فيحرم بالعمرة ويأتي بعملها ولو عكس لم يكن مفرداً (و) الثاني (التلبية) ويسن الإكثار منها في دوام الإحرام ويرفع الرجل صوته بها. ولفظها لبيك اللهم لبيك لبيك لا شريك لك لبيك، إن الحمد والنعمة لك والملك لا شريك لك، وإذا فرغ من التلبية صلى على النبي، وسأل الله تعالى الجنة ورضوانه، واستعاذ به من النار.
+<br/><br/>
+و- الثالث (طواف القدوم) ويختص بحاج دخل مكة قبل الوقوف بعرفة، والمعتمر إذا طاف للعمرة أجزأه عن طواف القدوم (و) الرابع (المبيت بمزدلفة) وعده من السنن هو ما يقتضيه كلام الرافعي، لكن الذي في زيادة الروضة، وشرح المهذب أن المبيت بمزدلفة واجب
+<br/><br/>
+و- الخامس (ركعتا الطواف) بعد الفراغ منه ويصليهما خلف مقام إبراهيم عليه الصلاة والسلام ويسرّ بالقراءة فيهما نهاراً، ويجهر بها ليلاً وإذا لم يصلهما خلف المقام، ففي الحجر وإلا ففي المسجد، وإلا ففي أي موضع شاء من الحرم وغيره (و) السادس (المبيت بمنى) هذا ما صححه الرافعي لكن صحح النووي في زيادة الروضة الوجوب (و) السابع (طواف الوداع) عند إرادة الخروج من مكة لسفر حاجاً كان أو لا طويلاً كان السفر أو قصيراً. وما ذكره المصنف من سنيته قول مرجوح، لكن الأظهر وجوبه (ويتجرد الرجل) حتماً كما في شرح المهذب (عند الإحرام عن المخيط) من الثياب وعن منسوجها ومعقودها، وعن غير الثياب من خف ونعل (ويلبس إزاراً ورداء أبيضين) جديدين وإلا فنظيفين.
+
+</font></div>
+
+<hr><br/>
+
+
+<b><center>Kewajiban-Kewajiban Haji</b></center>
+<p>Kewajiban-kewajiban haji selain rukun ada tiga perkara.</p><br/>
+
+<b><center><i>Miqat</i></b></center>
+
+<p>Salah satunya adalah ihram dari miqat, yang mencakup miqat zaman dan miqat makan.</p>
+
+<p>Miqat zaman bagi haji adalah bulan Syawal, Dzul Qa’dah, dan sepuluh hari bulan Dzul Hijjah.</p>
+
+<p>Adapun miqat zaman bagi umrah adalah sepanjang tahun adalah waktu yang bisa untuk melaksanakan ihram umrah.</p>
+
+<p>Miqat makan di dalam haji bagi orang yang bermukim di Makkah adalah daerah Makkah itu sendiri, baik ia penduduk asli Makkah atau pendatang.</p>
+
+<p>Adapun selain orang yang bermukim di Makkah, maka miqat bagi orang yang datang dari Madinah Musyarrafah adalah Dzul Hulaifah.</p>
+
+<p>Bagi orang yang datang dari Iram, Mesir dan Maroko adalah Juhfah.</p>
+
+<p>Bagi orang yang datang dari dataran rendah Yaman adalah Yulamlam.</p>
+
+<p>Bagi orang yang datang dari dataran tinggi Hijaz dan Yaman adalah Qarn.</p>
+
+<p>Dan yang datang dari daerah timur adalah Dzatu ‘Irq.<sup>1</sup></p><br/>
+
+<b><center><i>Lempar Jumrah</i></b></center>
+
+<p>Yang ke dua dari kewajiban-kewajiban haji adalah melempar tiga jumrah.</p>
+
+<p>Di mulai dari jumrah Kubra, kemudian jumrah Wustha, lalu Jumrah Aqabah.</p>
+
+<p>Masing-masing jumrah di lempar dengan tujuh kerikil satu persatu.</p>
+
+<p>Seandainya ia melempar dua kerikil sekaligus, maka dihitung satu.</p>
+
+<p>Jika melempar menggunakan satu kerikil untuk melempar tujuh kali, maka dianggap mencukupi.</p>
+
+<p>Disyaratkan sesuatu yang digunakan untuk melempar adalah batu. Maka selain batu seperti permata dan gamping tidak mencukupi.<sup>2</sup></p><br/>
+
+<b><center><i>Mencukur Rambut</i></b></center>
+
+<p>Kewajiban ke tiga adalah mencukur atau memotong rambut.</p>
+
+<p>Yang utama bagi laki-laki adalah mencukur. Dan bagi perempuan adalah memotong.</p>
+
+<p>Minimal mencukur adalah menghilangkan tiga helai rambut kepala dengan cara dicukur, potong, cabut, bakar atau digunting.</p>
+
+<p>Orang yang tidak memiliki rambut kepala, maka bagi dia disunnahkan untuk menjalankan pisau cukur di kepalanya.</p>
+
+<p>Rambut selain kepala baik jenggot dan selainnya, tidak bisa menggantikan rambut kepala.</p><br/>
+
+
+
+
+
+<b><center>Kesunahan-Kesunahan Haji</b></center>
+
+<p>Kesunahan-kesunahan haji ada tujuh.
+
+<b><center><i>Haji Ifrad</i></b></center>
+
+<p>Salah satunya adalah ifrad. Yaitu mendahulukan pelaksanaan haji sebelum melaksanakan umrah.</p>
+
+<p>Dengan cara pertama ihram haji dari miqatnya, dan setelah selesai melaksanakan haji kemudian ia keluar dari Makkah menuju tanah halal terdekat lalu melakukan ihram umrah dan melaksanakan amal-amalnya.</p>
+
+<p>Jika dibalik, maka dia bukan orang yang melakukan haji ifrad.<sup>3</sup></p><br/>
+
+<b><center><i>Talbiyah</i></b></center>
+
+<p>Yang kedua adalah membaca talbiyah. Disunnahkan memperbanyak membaca talbiyah selama menjalankan ihram.</p>
+
+<p>Bagi laki-laki sunnah mengeraskan suara bacaan talbiyahnya.</p>
+
+<p>Lafadz talbiyah adalah, “ya Allah aku penuhi panggilan-Mu, aku penuhi panggilan-Mu. Tidak ada sekutu bagi-Mu, aku penuhi panggilan-Mu. Sesungguhnya segala puji dan kenikmatan hanya milik-Mu Dan kerajaan. Tidak ada sekutu bagi-Mu.”</p>
+
+<p>Ketika selesai membaca tabiyah, hendaknya ia membaca sholawat kepada baginda Nabi shallallahu ‘alaihi wa sallam, dan meminta kepada Allah ta’ala agar diberi surga dan keridlaan-Nya, dan berlindung kepada-Nya dari api neraka.</p><br/>
+
+<b><center><i>Thawaf Qudum</i></b></center>
+
+<p>Yang ke tiga adalah thawaf Qudum.</p>
+
+<p>Thawaf Qudum dikhususkan bagi orang haji yang masuk Makkah sebelum melaksanakan wukuf di Arafah</p>
+
+<p>Sedangkan bagi orang yang melaksanakan umrah, ketika ia melaksanakan thawaf umrah, maka sudah mencukupi dari thawaf Qudum.</p><br/>
+
+<b><center><i>Mabit Muzdalifah</i></b></center>
+
+<p>Yang ke empat adalah mabit di Muzdalifah.</p>
+
+<p>Memasukkan mabit di Muzdalifah di dalam golongan kesunahan adalah pendapat yang ditetapkan oleh pendapatnya imam ar Rafi’i.</p>
+
+<p>Akan tetapi keterangan yang terdapat di dalam tambahannya kitab ar Raudlah dan Syarh al Muhadzdzab, bahwa sesungguhnya mabit di Muzdalifah adalah sesuatu yang wajib.</p><br/>
+
+<b><center><i>Sholat Sunnah Thawaf</i></b></center>
+
+<p>Yang ke lima adalah sholat dua rakaat thawaf setelah selesai melaksanakannya.</p>
+
+<p>Hendaknya ia melaksanakan sholat tersebut di belakang maqam Ibrahim As.</p>
+
+<p>Sunnah memelankan suara bacaan saat melaksanakan sholat tersebut di siang hari, dan mengeraskan suara bacaan di malam hari.</p>
+
+<p>Dan ketika tidak melaksanakan sholat tersebut di belakang maqam Ibrahim, maka hendaknya sholat di Hijr Isma’il, jika tidak maka di dalam masjid, dan jika tidak maka di tempat manapun yang ia kehendaki baik tanah Haram dan yang lainnya.</p><br/>
+
+<b><center><i>Mabit Mina</i></b></center>
+
+<p>Yang ke enam adalah mabit di Mina. Ini adalah pendapat yang disahkan oleh imam ar Rafi’i.</p>
+
+<p>Akan tetapi di dalam tambahan ar Raudlah, imam an Nawawi menshohikan hukum wajib.</p><br/>
+
+<b><center><i>Thawaf Wada’</i></b></center>
+
+<p>Yang ke tujuh adalah thawaf Wada’ ketika hendak keluar dari Makkah karena untuk bepergian. Baik orang haji atau bukan. Baik bepergian jauh atau dekat.</p>
+
+<p>Apa yang telah disampaikan mushannif yaitu berupa hukum kesunahan thawaff Wada’ adalah pendapat marjuh (lemah), akan tetapi menurut pendapat al adhhar hukumnya adalah wajib.</p><br/>
+
+<b><center><i>Pakaian Orang Ihram</i></b></center>
+
+<p>Saat ihram, menurut keterangan di dalam kitab Syarh al Muhadzdzab, seorang laki-laki wajib menghindari pakaian yang berjahit, di tenun, di kelabang, dan dari selain pakaian yang berupa muza dan sandal.</p>
+
+<p>Dan wajib bagi dia mengenakan jarik dan selendang berwarna putih yang masih baru, jika tidak maka yang bersih.</p>
+
+
+</p>
+
+
+<b><u>Catatan:</u></b><br/>
+<phr>
+<p><sub>1</sub>Perbedaan antara ruku dan kwajiban dalam bab haji adalah bahwa rukun itu merupakan
+sesuatu hal yang hakekat haji tidak bisa ditemukan tanpa wujudnya hal tersebut.
+Sedangkan kwajiban adalah sesuatu hal yang apabila ditinggalkan maka wajib diganti
+dengan membayar dam namun hakekat haji tidak tergantung padanya. Lihat Tausyikh,
+Darul Minhaj, hal. 191.</p>
+
+<p><sub>2</sub>3 kali jumroh ini dilakukan pada 3 hari Tasyriq. Waktu ramyu tersebut masuk dengan
+tergelincirnya matahari. Waktu ikhityarnya tetap ada hingga akhir siang. Sedangkan
+waktu jawaz tetap ada hingga akhir hari tasyriq. Lihat Tausyikh, Darul Minhaj, hal 192.</p>
+
+
+<p><sub>3</sub>Membaliknya berarti mendahulukan haji daripada umroh dinamakan tamatu’. Dilihat
+dari keutamaannya, yang paling utama adalah Ifrod lalu Tamatu’ dan terakhir adalah
+Qiron. Qiron adalah ber-ihrom dua ibadah (haji dan umroh) sekaligus di bulan-bulan haji.
+Ber-ihrom melakukan umroh kemudian memasukkan haji pada umrohnya sebelum
+melakukan thowaf. Selanjutnya melakukan amalan haji. Sehingga keduanya berhasil
+dengan praktek memasukkan suatu yang kecil (umroh) dalam suatu yang besar (haji).
+Lihat Tausyikh, Darul Minhaj, hal. 193-194.</p>
+
+
+
+</phr>
+
+
+
+
+
+<br/>
+
+  <div class="bottom-nav">
+    <div class="bottom-link-nav"> 
+    <a href="../index.html">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+    </a>
+
+    <a href="1.html">
+	<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M18,11V13H10L13.5,16.5L12.08,17.92L6.16,12L12.08,6.08L13.5,7.5L10,11H18M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12Z" /></svg>
+    </a>
+	
+    <a href="">
+    <font size="2" > 2</font>
+	</a>
+	
+	<a href="3.html">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" /></svg>
+    </a>
+	
+    <a href="#" id="tmnj">
+     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+    </a>
+	
+
+    </div>
+
+
+</body>
+</html>
